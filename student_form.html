@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouman School Registration Form</title>
+<link rel="stylesheet" href="student_form.css">
+<body>
+<h2>Nouman School, Student Registration Form</h3>
+
+ 
+<table align="center" cellpadding = "10">
+<form id="myForm" action="https://formspree.io/f/xvojqree"
+method="POST">
+ 
+<!--------------------- First Name ------------------------------------------>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" maxlength="50" placeholder="Kashif" required />
+(Max 50 Characters Allowed)
+</td>
+</tr>
+ 
+<!------------------------ Last Name --------------------------------------->
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" maxlength="50" placeholder="Khan" required/>
+(Max 50 Characters Allowed)
+</td>
+</tr>
+ 
+<!-------------------------- Email ID ------------------------------------->
+<tr>
+<td>Email ID</td>
+<td><input type="email" name="EmailID" maxlength="100" placeholder="kashifkhan123@gmail.com"/></td>
+</tr>
+ 
+<!-------------------------- Mobile Number ------------------------------------->
+<tr>
+<td>Mobile Number</td>
+<td>
+<input type="text" name="MobileNumber" maxlength="11" placeholder="03023207807" required/>
+(11 Digits Allowed)
+</td>
+</tr>
+ 
+<!---------------------- Gender ------------------------------------->
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+</td>
+</tr>
+
+<!--------------------------Date Of Birth----------------------------------->
+
+<tr>
+<td>Date of Birth(DOB)</td>
+ 
+<td>
+<select name="BirthDay" id="Birthday_Day">
+<option value="-1">Day:</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+ 
+<select name="BirthdayMonth" id="Birthday_Month">
+<option value="-1">Month:</option>
+<option value="January">Jan(1)</option>
+<option value="February">Feb(2)</option>
+<option value="March">Mar(3)</option>
+<option value="April">Apr(4)</option>
+<option value="May">May(5)</option>
+<option value="June">Jun(6)</option>
+<option value="July">Jul(7)</option>
+<option value="August">Aug(8)</option>
+<option value="September">Sep(9)</option>
+<option value="October">Oct(10)</option>
+<option value="November">Nov(11)</option>
+<option value="December">Dec(12)</option>
+</select>
+ 
+<select name="BirthdayYear" id="Birthday_Year">
+ 
+<option value="-1">Year:</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
+<option value="2002">2002</option>
+<option value="2001">2001</option>
+<option value="2000">2000</option>
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+<option value="1996">1996</option>
+<option value="1995">1995</option>
+<option value="1994">1994</option>
+<option value="1993">1993</option>
+<option value="1992">1992</option>
+<option value="1991">1991</option>
+<option value="1990">1990</option>
+<option value="1989">1989</option>
+<option value="1988">1988</option>
+<option value="1987">1987</option>
+<option value="1986">1986</option>
+<option value="1985">1985</option>
+<option value="1984">1984</option>
+<option value="1983">1983</option>
+<option value="1982">1982</option>
+<option value="1981">1981</option>
+<option value="1980">1980</option>
+</select>
+</td>
+</tr>
+ 
+
+<!------------------------------ PLace of Birth --------------------------------->
+<tr>
+  <td>Place of Birth(POB)</td>
+  <td><input type="text" name="Birth" placeholder="Nawabshah" required /></td>
+  </tr>
+ 
+ 
+<!------------------------- Address ---------------------------------->
+<tr>
+<td>Home Address<br /><br /><br /></td>
+<td><textarea name="Address" rows="5" cols="72" placeholder="Camp No.2 Near Ghousia Madarsa" required></textarea></td>
+</tr>
+ 
+<!-------------------------- City ------------------------------------->
+<tr>
+<td>City</td>
+<td><input type="text" name="City" maxlength="50" placeholder="Nawabshah" required/>
+</td>
+</tr>
+ 
+<!----- -------------------- Pin Code-------------------------------------->
+<tr>
+<td>Postal Code</td>
+<td><input type="Number" name="PinCode" maxlength="6" placeholder="67450"/>
+(Max 6 Numbers Allowed)
+</td>
+</tr>
+ 
+<!---------------------------- State ----------------------------------->
+<tr>
+<td>State</td>
+<td><input type="text" name="State" maxlength="50" placeholder="Sindh" required/>
+</td>
+</tr>
+ 
+<!------------------------------ Country --------------------------------->
+<tr>
+<td>Country</td>
+<td><input type="text" name="Country" placeholder="Pakistan" required /></td>
+</tr>
+
+<!------------------------------ Language --------------------------------->
+<tr>
+  <td>Language you spoke</td>
+  <td><input type="text" name="Language" placeholder="Urdu, Sindi, Punjabi, Balochi?" required /></td>
+  </tr>
+ 
+<!------------------------------ Religion --------------------------------->
+<tr>
+  <td>Religion</td>
+  <td><input type="text" name="Religion" placeholder="Islam" required /></td>
+  </tr>
+
+<!------------------------- Hobbies -------------------------------------->
+ 
+<tr>
+<td>Hobbies <br /><br /><br /></td>
+ 
+<td>
+<input type="checkbox" name="HobbyDrawing" value="Drawing" />
+Drawing
+<input type="checkbox" name="HobbySinging" value="Singing" />
+Singing
+<input type="checkbox" name="HobbyDancing" value="Dancing" />
+Dancing
+<input type="checkbox" name="HobbyCooking" value="Cooking" />
+Cooking
+<input type="checkbox" name="HobbySketching" value="Sketching" />
+Sketching
+<input type="checkbox" name="HobbyReading" value="Reading" />
+Reading
+<br />
+<input type="checkbox" name="HobbyOther" value="Other">
+Others
+<input type="text" name="Other_Hobby" maxlength="50" placeholder="Example - Teaching" />
+(Max 50 Characters Allowed)
+</td>
+</tr>
+ 
+<!-----------------------Qualification---------------------------------------->
+
+<tr>
+<td>Qualification <br /><br /><br /></td>
+ 
+<td>
+<br/>
+<input type="radio" name="SchoolQualification" value="First Time Admission" />
+First Time Admission<br>
+<input type="radio" name="SchoolQualification" value="Already Enrolled in any School" />
+Already Enrolled in any School<br/>
+</td>
+</tr>
+
+ 
+<!---------------------------- Classes ----------------------------------->
+<tr>
+<td>In Which Class You're<br />Applied For?</td>
+<td>
+<input type="checkbox" name="Class" value="P.G to Prep Class">
+P.G to Prep Class<br>
+<input type="checkbox" name="Class" value="1st to 5th Class">
+1st to 5th Class<br>
+<input type="checkbox" name="Class" value="6th to 10th Class">
+6th to 10th Class<br>
+</td>
+</tr>
+
+
+  <tr>
+    <td colspan="2">
+      <p style="text-align: center; font-weight: bold;">Important Things to Note</p>
+      <p>(One Time Admission Fees: 3000 RS)</p>
+      <p>Monthly Fees Structure:</p>
+      <p>— P.G to Prep Classes: = 1500 RS</p>
+      <p>— 1st to 5th Classes: = 1700 RS</p>
+      <p>— 6th to 10th Classes: = 2000 RS</p>
+
+      <p>Requirements for taking admission:</p>
+      <ol>
+        <li>Birth Certificate / Bform / School Leaving Certificate.</li>
+        <li>Two Passport Size Photos of Student.</li>
+        <li>One photocopy of the Father or Mother CNIC.</li>
+      </ol>
+
+      <p>Note: After Filling out this admission form, come up to our school with the requirements given above, or we will contact you via your given phone number, Thanks.</p>
+    </td>
+  </tr>
+
+  
+<!----------------------- Submit and Reset ------------------------------->
+<tr>
+  <td colspan="2" align="center">
+    <input id="submit-form" type="submit" value="Submit">
+    <input type="submit" value="Reset" onclick="resetForm()">
+  </td>
+</tr>
+</table>  
+ 
+</form>
+ 
+</body>
+<script src="student_form.js"></script>
+</html>
+
+
